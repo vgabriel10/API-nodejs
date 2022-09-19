@@ -24,7 +24,7 @@ app.get('/about',(req,res) => {
 })
 
 app.get('/usuarios',(req,res) => {
-    res.json({
+    res.json([{
         nome: 'João Ferreira',
         dataNascimento: '10/12/2000',
         email:'joão@gmail.com',
@@ -51,7 +51,7 @@ app.get('/usuarios',(req,res) => {
         email:'leticiaa@gmail.com',
         telefone: '988784042',
         cidade: 'Fortaleza/CE'
-    })
+    }])
 })
 
 app.get('/',(req,res) => {
